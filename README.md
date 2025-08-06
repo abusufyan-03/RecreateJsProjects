@@ -2,6 +2,13 @@
 
 Rebuilding all the JavaScript mini projects I created during my learning journey but this time from scratch.
 
+## 📅 Projects
+
+| S.no | Projects         | Live Link |
+|-----|----------------|--------|
+| 1   | Color Changer       | [Color Changer](project-01-TodoApp/README.md) |
+| 2   | Digital Clock     | [BMI Calculator](project-02-Calculator/README.md) |
+
 ## 🎯 What’s Different This Time?
 
 - ✅ No tutorials
@@ -24,9 +31,3 @@ Rebuilding all the JavaScript mini projects I created during my learning journey
 
 ---
 
-## 📅 Projects
-
-| S.no | Projects        | Live Link |
-|-----|----------------|--------|
-| 1   | Color Changer       | [Color Changer](project-01-TodoApp/README.md) |
-| 2   | Digital Clock     | [BMI Calculator](project-02-Calculator/README.md) |
