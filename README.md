@@ -1,13 +1,14 @@
 # RecreateJsProjects 🛠️
 
-Rebuilding all the JavaScript mini projects I created during my learning journey but this time from scratch.
+Rebuilding all the JavaScript mini projects I created during my learning journey but this time from my own. no tutorial
 
 ## 📅 Projects
 
 | S.no | Projects         | Live Link |
 |-----|----------------|--------|
 | 1   | Color Changer       | [Color Changer](01-colorChanger/index.html) |
-| 2   | Digital Clock     | [BMI Calculator](project-02-Calculator/README.md) |
+| 2   | Digital Clock     | [Digital Clock](02-digitalClock/index.html) |
+| 3   | BMI Calculator     | [BMI Calculator](03-bmiCalculator/index.html) |
 
 ## 🎯 What’s Different This Time?
 
