@@ -8,7 +8,9 @@ Rebuilding all the JavaScript mini projects I created during my learning journey
 |-----|----------------|--------|
 | 1   | Color Changer       | [Color Changer](01-colorChanger/index.html) |
 | 2   | Digital Clock     | [Digital Clock](02-digitalClock/index.html) |
-| 3   | BMI Calculator     | [BMI Calculator](03-bmiCalculator/index.html) |
+| 3   | Keyboard Checker     | [keyboard Checker](03-keyboardCheck/index.html) |
+| 4   | Unlimited Color     | [Unlimited Color](03-unlimitedColor/index.html) |
+
 
 ## 🎯 What’s Different This Time?
 
