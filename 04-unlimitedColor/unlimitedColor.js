@@ -16,7 +16,8 @@ function randomColor(){
 let valId
 console.log("after declaring valId: ", valId)
 document.querySelector('#start').addEventListener('click', function(){
-  stop.style.display = 'inline-block'
+  stop.style.display = 'inline-block';
+  start.style.display = 'none';
  if(!valId){
    valId = setInterval(function(){
     document.body.style.backgroundColor = randomColor();
@@ -27,6 +28,8 @@ document.querySelector('#start').addEventListener('click', function(){
 
 document.querySelector('#stop').addEventListener('click', function(){
   stop.style.display = 'none';
+    start.style.display = 'inline-block';
+
   clearInterval(valId);
    console.log('after clicking stop button valId', valId )
   valId = null
