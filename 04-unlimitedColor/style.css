@@ -2,10 +2,6 @@
     margin: 0;
   }
 
-  .main {
-    border: 2px solid salmon;
-  }
-
   section {
     margin-top: 32px;
     padding: 0 32px;
@@ -15,13 +11,15 @@
   }
 
   h1 {
-    font-size: 54px;
+    font-size: 35px;
     margin-bottom: 16px;
+    text-align: center;
   }
 
   p {
     opacity: .9;
     font-size: 18px;
+    text-align: center;
   }
 
   .color-box {
@@ -34,7 +32,7 @@
 
   .hexa-value {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 900;
     font-family: monospace;
   }
 
@@ -43,6 +41,7 @@
     margin-top: 6px;
     opacity: .75;
     text-align: center;
+    cursor: pointer;
   }
 
   .button {
