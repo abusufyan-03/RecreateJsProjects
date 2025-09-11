@@ -30,13 +30,13 @@ function randomColor() {
 
 let valId
 start.addEventListener('click', function () {
-  let color = randomColor();
   stop.style.display = 'inline-block';
   start.style.display = 'none';
   copy.innerHTML = 'Click to copy';
   copy.style.color = '#000000';
   if (!valId) {
     valId = setInterval(function () {
+      let color = randomColor();
       document.body.style.backgroundColor = color;
       hexaValue.innerHTML = `${color}`;
     }, 1000)
@@ -44,7 +44,9 @@ start.addEventListener('click', function () {
 });
 
 generate.addEventListener('click', function () {
-  document.body.style.backgroundColor = randomColor();
+  let color = randomColor();
+  document.body.style.backgroundColor = color;
+  hexaValue.innerHTML = `${color}`
 })
 
 stop.addEventListener('click', function () {
