@@ -29,7 +29,7 @@ function randomColor() {
 }
 
 let valId
-document.querySelector('#start').addEventListener('click', function () {
+start.addEventListener('click', function () {
   let color = randomColor();
   stop.style.display = 'inline-block';
   start.style.display = 'none';
@@ -47,7 +47,7 @@ generate.addEventListener('click', function () {
   document.body.style.backgroundColor = randomColor();
 })
 
-document.querySelector('#stop').addEventListener('click', function () {
+stop.addEventListener('click', function () {
   stop.style.display = 'none';
   start.style.display = 'inline-block';
 
