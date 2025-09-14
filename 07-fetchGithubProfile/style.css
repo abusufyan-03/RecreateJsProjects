@@ -5,6 +5,8 @@
 }
 
 :root {
+  --primary: #2563eb;
+  /* primary color */
   --bg: #f3f4f6;
   /* light gray background */
   --card: #ffffff;
@@ -80,6 +82,44 @@ input[type="text"]:focus {
   font-weight: 600;
   cursor: pointer;
 }
+
+.error-message {
+  text-align: center;
+  margin: 24px 0;
+  background-color: oklch(95.4% 0.038 75.164);
+  color: oklch(47% 0.157 37.304);
+  padding: 16px;
+  border-radius: 10px;
+  border: 2px solid oklch(90.1% 0.076 70.697);
+  font-weight: 600;
+}
+
+
+#spin-loading {
+    justify-content: center;
+    margin-top: 24px;
+    display: none;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #111827;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
 
 
 .profile-card {
