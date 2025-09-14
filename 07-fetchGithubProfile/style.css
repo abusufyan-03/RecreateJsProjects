@@ -5,17 +5,10 @@
 }
 
 :root {
-  /* 3-5 color palette: primary + neutrals + one accent */
-  --primary: #2563eb;
-  /* blue */
   --bg: #f3f4f6;
   /* light gray background */
   --card: #ffffff;
   /* white card */
-  --text: #111827;
-  /* near-black text */
-  --success: #10b981;
-  /* green accent for "Normal" */
 }
 
 
