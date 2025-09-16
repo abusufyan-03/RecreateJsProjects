@@ -123,6 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log("guess array: ", prevGuess);
 
             if (noOfGuess === 10) {
+                displayMessage(`You Lost Try agian Random number was ${randomNumber}`);
                 input.style.borderColor = '#e2e8f0'
                 endGame();
                 return;
