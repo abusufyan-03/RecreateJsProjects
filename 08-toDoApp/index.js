@@ -33,7 +33,7 @@ form.addEventListener('submit', function (e) {
 function renderTask(task) {
     const li = document.createElement('li');
     console.log(li);
-    li.setAttribute('class', 'task')
+    li.classList.add('task')
     li.innerHTML = `
     <span>${task.task}</span>
     <button>delete</button>    
@@ -43,24 +43,24 @@ function renderTask(task) {
     if (task.complete === true) li.classList.add('complete')
 
     li.addEventListener('click', function (e) {
-        if (e.target.tagName === 'BUTTON') return
-        task.complete = !task.complete
-        li.classList.toggle('complete');
         console.log(task);
-        saveTask()
+        if (e.target.tagName === 'BUTTON') return
+        task.complete = !task.complete;
+        li.classList.toggle('complete');
+        saveTask();
     });
 
     li.querySelector('button').addEventListener('click', function (e) {
+        console.log(task.id)
         tasks = tasks.filter(t => t.id !== task.id);
         li.remove();
         saveTask();
 
     })
-
 }
 
 function saveTask() {
-    localStorage.setItem('tasks', JSON.stringify(tasks))
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 
