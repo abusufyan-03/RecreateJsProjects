@@ -10,17 +10,21 @@
     <main>
         <section class="card">
             <h1 class="title">Weather Web APP</h1>
-            <form class="form">
+            <form id="form">
                 <input type="text" id="input" placeholder="Enter City Name">
                 <button id="sub-btn">Get Weather</button>
             </form>
 
-            <div class="weather">
-                <h2 class="city-name">Kolata</h2>
-                <p class="temp">29C</p>
-                <p class="description">haze</p>
+            <div class="weather-info">
+                <h2 id="city-name"></h2>
+                <p id="temp"></p>
+                <p id="description"></p>
             </div>
+             <p id="error-message"></p>
+
         </section>
     </main>
+
+    <script src="index.js"></script>
 </body>
 </html>
