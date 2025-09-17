@@ -6,6 +6,7 @@ const cityName = document.getElementById('city-name');
 const temp = document.getElementById('temp');
 const description = document.getElementById('description');
 const errorMessage = document.getElementById('error-message');
+const loader = document.getElementById('spin-loading');
 
 const API_KEY = '8ebba781858ce4326330af280b20cf90';
 
@@ -15,6 +16,9 @@ form.addEventListener('submit', function(e){
     let cityInput = input.value.trim();
     if(cityInput === '') return;
     console.log(cityInput);
+
+        loader.style.display = 'flex';
+
 
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityInput}&appid=${API_KEY}&units=metric`)
     .then((response) => {
@@ -27,6 +31,7 @@ form.addEventListener('submit', function(e){
             console.log('inside if block', data)
             console.log(data.response)
             input.value = '';
+            loader.style.display = 'none';
             errorMessage.style.display = 'block';
             weatherInfo.style.display = 'none'
             errorMessage.innerHTML = `${data.message}`;
@@ -34,6 +39,7 @@ form.addEventListener('submit', function(e){
         }
 
         // success case
+        loader.style.display = 'none';
         errorMessage.style.display = 'none';
         weatherInfo.style.display = 'flex';
         cityName.innerHTML = `${data.name}`;
