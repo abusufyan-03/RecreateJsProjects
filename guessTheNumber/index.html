@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+</head>
+<body>
+  <!-- <nav>
+    <a href="../index.html" aria-current="page">Home</a>
+  </nav>
+    
+    <div id="wrapper-2">
+      <div class="heading-3">
+        <h3>Number guessing game</h3>
+      </div>
+    <p>Try and guess a random number between 1 and 100.</p>
+    <p>You have 10 attempts to guess the right number.</p>
+    </br>
+        <form class="form">
+            <label for="guessField" id="guess">Guess a number</label><br>
+            <input type="number" id="guessField" class="guessField">
+            <div class="button"><input type="submit" id="subt" value="Submit guess" class="guessSubmit"></div>
+        </form>
+
+        <div class="resultParas">
+            <p >Previous Guesses: <span class="guesses"></span></p>
+            <p >Guesses Remaining: <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+            <p class="startAgain">Start new Game</p>
+        </div>
+    </div> -->
+
+    <main>
+      <section class="card">
+        <h1 class="title">Number Guessing Game</h1>
+        <p class="description">Try and Guess a random number between 1 to 100.</p>
+        <p class="description">You have <span class="totalGuess">10</span> attempts to guess the right number</p>
+
+        <form class="form">
+          <input type="number" id="input" placeholder="Enter a Number (1-100)">
+          <button class="button">Submit Guess</button>
+        </form>
+        
+        <div class="feedback">
+          <p class="message">Enter a number between 1 to 100 to start!</p>
+        </div>
+        <div class="guessLog">
+          <div class="remainingGuessContainer">
+            <p>Remaining Guess:</p><span class="remainingGuess">10</span>
+          </div>
+          <div class="previousGuessContainer">
+            <p>Previous Guess:</p>
+            <p class="previousGuesses"><i>None Yet</i></p>
+          </div>
+        </div>
+
+        <div class="startNewGame">
+          <button class="startAgain">Start Again</button>
+        </div>
+
+        
+      </section>
+    </main>
+    <script src="guessTheNumber.js"></script>
+</body>
+</html>

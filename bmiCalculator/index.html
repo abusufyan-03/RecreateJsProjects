@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="../style.css" /> -->
+  <title>BMI Calculator</title>
+</head>
+
+<body>
+  <!-- <div class="container">
+        <div class="home">
+            <a href="/" aria-current="page">Home</a>
+        </div>
+        <div class="wrapper">
+        <h1>BMI Calculator</h1>
+        <form>
+            <p><label>Height in CM: </label><input type="text" id="height" /></p>
+            <p><label>Weight in KG: </label><input type="text" id="weight" /></p>
+            <button>Calculate</button>
+            <div id="results"></div>
+            <div id="weight-guide">
+              <h3>BMI Weight Guide</h3>
+              <p>Under Weight = Less than 18.6</p>
+              <p>Normal Range = 18.6 and 24.9</p>
+              <p>Overweight = Greater than 24.9</p>
+            </div>
+          </form>
+        </div>
+      </div> -->
+
+
+      <!-- Redesign and little improvement -->
+  <main>
+    <section class="card">
+      <h1 class="title">BMI Calculator</h1>
+      <p class="description">Enter your height and weight to estimate your Body Mass Index.</p>
+
+      <form class="bmi-form">
+        <div class="field">
+          <label for="height">Height (CM)</label>
+          <input id="height" type="number" placeholder="e.g 170">
+        </div>
+        <div class="field">
+          <label for="height">Weight (Kg)</label>
+          <input id="weight" type="number" placeholder="e.g 70">
+        </div>
+        <button class="sub-btn">Calculate BMI</button>
+      </form>
+      
+      <div class="result">
+        <div class="result-value"><span class="bmi-value">0.0</span></div>
+        <div class="bmi-category"><span class="badge">—</span><span class="warning"></span></div>
+        <ul class="guidline">
+          <li>Underweight: less than 18.5</li>
+          <li>Normal: 18.5 – 24.9</li>
+          <li>Overweight: 25.0 – 29.9</li>
+          <li>Obesity: 30.0 or higher</li>
+        </ul>
+        <p class="note">This tool is for general information only and not a medical diagnosis.</p>
+      </div>
+
+    </section>
+  </main>
+</body>
+<script src="bmiCalculator.js"></script>
+
+</html>

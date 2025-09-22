@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary: #2563eb;
+  /* primary color */
+  --bg: #f3f4f6;
+  /* light gray background */
+  --card: #ffffff;
+  /* white card */
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 16px;
+}
+
+.card {
+  width: 420px;
+  background-color: var(--card);
+  Border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08), 0 8px 24px rgba(15, 23, 42, 0.08);
+  padding: 24px;
+}
+
+.title {
+  margin-bottom: 8px;
+  font-size: 28px;
+  text-align: center;
+}
+
+#form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+  height: 44px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background-color: #fff;
+  color: #0F172A;
+  width: 66%;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 0 4px rgba(37,99,235,.15);
+}
+
+#sub-btn {
+  width: 30%;
+  padding: 12px 4px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#spin-loading {
+    justify-content: center;
+    margin-top: 24px;
+    display: none;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #111827;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+}
+
+#error-message {
+  text-align: center;
+  margin: 24px 0;
+  background-color: oklch(95.4% 0.038 75.164);
+  color: oklch(47% 0.157 37.304);
+  padding: 16px;
+  border-radius: 10px;
+  border: 2px solid oklch(90.1% 0.076 70.697);
+  font-weight: 600;
+  display: none;
+}
