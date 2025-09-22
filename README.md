@@ -6,12 +6,17 @@ Rebuilding all the JavaScript mini projects I created during my learning journey
 
 | S.no | Projects         | Live Link |
 |-----|----------------|--------|
-| 1   | Color Changer       | [Color Changer](01-colorChanger/index.html) |
-| 2   | Digital Clock     | [Digital Clock](02-digitalClock/index.html) |
-| 3   | Keyboard Checker     | [keyboard Checker](03-keyboardCheck/index.html) |
-| 4   | Unlimited Color     | [Unlimited Color](03-unlimitedColor/index.html) |
-| 5   | BMI Calculator     | [BMI Calculator](05-bmiCalculator/index.html) |
-| 6   | Guess The Number     | [Guess The Number](06-guessTheNumber/index.html) |
+| 1   | Color Changer       | [Color Changer](colorChanger/index.html) |
+| 2   | Digital Clock     | [Digital Clock](digitalClock/index.html) |
+| 3   | Keyboard Checker     | [keyboard Checker](keyboardCheck/index.html) |
+| 4   | Unlimited Color     | [Unlimited Color](unlimitedColor/index.html) |
+| 5   | BMI Calculator     | [BMI Calculator](bmiCalculator/index.html) |
+| 6   | Guess The Number     | [Guess The Number](guessTheNumber/index.html) |
+| 7   | Github Profile Fetcher| [Github Profile Fetcher](fetchGithubProfile/index.html) |
+| 8   | Todo web app    | [Todo ](toDoApp/index.html) |
+| 9   | Weather web app     | [weather web app](weatherApp/index.html) |
+
+
 
 
 ## 🎯 What’s Different This Time?
