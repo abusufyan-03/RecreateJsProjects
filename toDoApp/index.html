@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do APP</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <section class="card">
-            <h1 class="title">TO DO APP</h1>
+            <header>
+                <h1 class="title"><span class="todo-icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-icon lucide-circle-check"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg></span>My Tasks</h1>
+                <p id="date">Monday, May 5</p>
+            </header>
             <form class="form">
                 <input type="text" id="input" placeholder="Enter Your Task">
                 <button id="sub-btn">add Task</button>
             </form>
-            
+
+            <div class="tab">
+                <button class="tab-button" id="all">All</button>
+                <button class="tab-button" id="active">Active</button>
+                <button class="tab-button" id="complete">Completed</button>
+
+            </div>
+
             <ul class="todo-list">
                 <!-- <li class="task complete">
                     <span>task</span>
@@ -26,4 +38,5 @@
 
     <script src="index.js"></script>
 </body>
+
 </html>

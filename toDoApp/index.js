@@ -2,6 +2,15 @@ const input = document.getElementById('input');
 const subBtn = document.getElementById('sub-btn');
 const form = document.querySelector('.form');
 const todo = document.querySelector('.todo-list');
+const allTabBUtton = document.getElementById('all');
+const activeTabButton = document.getElementById('active');
+const completeTabButton = document.getElementById('complete');
+const date = document.getElementById('date');
+const tabButtons = document.querySelectorAll('.tab-button');
+
+let today = new Date()
+let option = {weekday: 'long', month: 'long', day: 'numeric'}
+date.innerHTML = `${today.toLocaleDateString('en-US', option)}`
 
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
@@ -58,6 +67,35 @@ function renderTask(task) {
 
     })
 }
+
+allTabBUtton.addEventListener('click', function(){
+    todo.innerHTML = '';
+    tasks.forEach((task)=> {
+        renderTask(task)
+    })
+})
+
+activeTabButton.addEventListener('click', function(){
+    todo.innerHTML = '';
+    let activeTasks = tasks.filter(task => task.complete === false);
+    console.log(activeTasks)
+    activeTasks.forEach((task)=> renderTask(task))
+})
+
+completeTabButton.addEventListener('click', function(){
+    todo.innerHTML = '';
+    let completeTasks = tasks.filter(task => task.complete === true)
+    console.log(completeTasks);
+    completeTasks.forEach((task)=> renderTask(task))
+})
+
+tabButtons[0].classList.add('active')
+tabButtons.forEach((tab)=> {
+    tab.addEventListener('click', function(){
+        tabButtons.forEach((t)=> t.classList.remove('active'))
+        tab.classList.add('active')
+    })
+})
 
 function saveTask() {
     localStorage.setItem('tasks', JSON.stringify(tasks));
